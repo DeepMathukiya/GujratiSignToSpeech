@@ -23,7 +23,7 @@ The solution integrates **machine learning** and **AR technology** for real-time
 
 ### 1. Clone the repository:
 ```bash
-git clone https://github.com/your-username/SignToSpeech.git
+git clone https://github.com/DeepMathukiya/GujratiSignToSpeech.git
 cd SignToSpeech
 ```
 ## 2.Install Requirement Libraries:
