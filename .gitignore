@@ -4,4 +4,7 @@ saved_img2.png
 saved_img3.jpg
 vgg19_model_o8.keras
 model_on_Edge_RGB.h5
+model_on_Edge_GrayScale_WithoutImgnet.h5
 newdata.h5
+dataset.zip
+vgg19_model_o8_segmented.keras
