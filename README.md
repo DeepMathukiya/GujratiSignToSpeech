@@ -30,5 +30,6 @@ cd SignToSpeech
 ```bash 
 pip install -r requirements.txt
 ``` 
-## 3.RUN 
-open realtime.ipynb and run shell of model 
+
+## 3.RUN
+download the models using <a href="https://drive.google.com/drive/folders/16zJpYs6UsYYr32aCNh4CwmJv5HaPSTOt?usp=drive_link">link</a> open realtime.ipynb and run shell of downloaded model
