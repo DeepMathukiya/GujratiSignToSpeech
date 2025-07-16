@@ -28,5 +28,7 @@ cd SignToSpeech
 ```
 ## 2.Install Requirement Libraries:
 ```bash 
-pip install requiremnet.txt
+pip install -r requirements.txt
 ``` 
+## 3.RUN 
+open realtime.ipynb and run shell of model 
