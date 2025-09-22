@@ -36,3 +36,6 @@ download the models using <a href="https://drive.google.com/drive/folders/16zJpY
 
 ## 4.Demo
 <img src="demo.gif" alt="demo">
+
+## 5.Proposed Device 
+<img src ="device.png" alt = "device">
