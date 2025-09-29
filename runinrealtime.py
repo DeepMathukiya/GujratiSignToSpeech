@@ -78,6 +78,11 @@ def text_to_speech(text):
     engine.say(text)
     engine.runAndWait()
 
+def process_prediction(region):
+    global prediction_label
+    prediction_label, trans_label = classify_image(region)
+    text_to_speech(trans_label)
+
 # ----------------------------
 # Main loop
 # ----------------------------
@@ -93,12 +98,11 @@ try:
 
         # Draw ROI rectangle
         cv2.rectangle(frame, (region_left, region_top), (region_right, region_bottom), (0, 0, 0), 2)
-        region = frame[region_top:region_bottom, region_left:region_right]
 
         # Prediction every 5 seconds
         if time.time() - last_pred_time >= 5:
-            prediction_label, trans_label = classify_image(region)
-            threading.Thread(target=text_to_speech, args=(trans_label,), daemon=True).start()
+            region = frame[region_top:region_bottom, region_left:region_right]
+            threading.Thread(target=process_prediction, args=(region,), daemon=True).start()
             last_pred_time = time.time()
 
         # Render Gujarati text
